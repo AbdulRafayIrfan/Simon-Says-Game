@@ -1,0 +1,70 @@
+/* Adding font from TTF file */
+@font-face {
+  font-family: GameFont;
+  src: url(PressStart2P-Regular.ttf);
+}
+
+body {
+  background-color: rgb(0, 38, 61);
+}
+
+h1 {
+  font-family: GameFont;
+  color: peachpuff;
+  text-align: center;
+  margin-top: 10%;
+}
+
+/* Button container */
+.buttons-container {
+  padding: 0;
+  margin: 0;
+  width: 25%;
+  height: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+}
+
+/* Color button */
+.color-button {
+  width: 150px;
+  height: 150px;
+  border-radius: 15%;
+  border: 6px solid black;
+  margin: 4.75%;
+  cursor: pointer;
+  opacity: 100%;
+}
+/* Different colors */
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+/* On button click styling */
+.pressed {
+  box-shadow: 0 0 20px #fff;
+  background-color: rgb(193, 192, 192);
+}
+
+/* Simon says sequence animation */
+@keyframes simon_says {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 30%;
+  }
+}
